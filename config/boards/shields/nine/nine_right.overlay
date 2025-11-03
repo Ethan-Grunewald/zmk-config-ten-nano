@@ -7,5 +7,5 @@
 #include "nine.dtsi"
 
 &default_transform {
-	col-offset = <9>;
+	col-offset = <10>;
 };
