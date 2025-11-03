@@ -7,19 +7,36 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+
+&mt {
+    tapping-term-ms = <200>;
+    flavor = "hold-preferred";
+};
+&sl {
+    release-after-ms = <400>;
+};
  
 /* Layers */
-#define AL1 0
+#define ALPHA1 0
+#define ALPHA2 1
 / {
        keymap {
                 compatible = "zmk,keymap";
                 
                 alpha1 {
-                label = "Base";
+                label = "Alpha1";
         bindings = <
             &kp B        &kp L    &kp D    &kp W                &kp F    &kp O        &kp U    &kp J
             &kp N        &kp R    &kp T    &kp S                 &kp H     &kp A         &kp E     &kp I
-                        &kp SPC        &kp ESC                  &kp BSPC  &kp ENTER
+                        &mt LSHIFT SPC     &lt 3 ESC              &lt 2 BSPC  &sl 1
+        >;
+        };
+                alpha2 {
+                label = "Alpha2";
+        bindings = <
+            &kp X        &kp Q    &kp M    &kp C                &kp Y    &kp APOS        &kp SEMI    &kp DOT
+            &kp TAB        &kp Z    &kp V    &kp G              &kp P     &kp K         &kp COMMA     &kp ENTER
+                        &trans     &trans            &trans  &none
         >;
         };
     };
