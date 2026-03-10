@@ -1,17 +1,17 @@
 # Copyright (c) 2022 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_NINE_LEFT
+if SHIELD_TEN_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Nine"
+    default "Ten"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
 
-if SHIELD_NINE_LEFT || SHIELD_NINE_RIGHT
+if SHIELD_TEN_LEFT || SHIELD_TEN_RIGHT
 config ZMK_SPLIT
     default y
 endif

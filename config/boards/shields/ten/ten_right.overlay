@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "nine.dtsi"
+#include "ten.dtsi"
 
 &default_transform {
 	col-offset = <10>;

@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir /s /b \"C:\\\\Users\\\\Ethan\\\\source\\\\repos\\\\zmk-config-ten-nano\\\\config\")",
+      "Bash(git mv:*)"
+    ]
+  }
+}
