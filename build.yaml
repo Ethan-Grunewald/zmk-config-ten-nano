@@ -14,8 +14,8 @@
 ---
 include:
   - board: nice_nano//zmk
-    shield: ten_left
+    shield: ten_left nice_view_adapter nice_view_custom
   - board: nice_nano//zmk
-    shield: ten_right
+    shield: ten_right nice_view_adapter nice_view_custom
   - board: nice_nano//zmk
     shield: settings_reset

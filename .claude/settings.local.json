@@ -4,7 +4,8 @@
       "Bash(dir /s /b \"C:\\\\Users\\\\Ethan\\\\source\\\\repos\\\\zmk-config-ten-nano\\\\config\")",
       "Bash(git mv:*)",
       "WebFetch(domain:github.com)",
-      "WebFetch(domain:zmk.dev)"
+      "WebFetch(domain:zmk.dev)",
+      "WebFetch(domain:raw.githubusercontent.com)"
     ]
   }
 }
